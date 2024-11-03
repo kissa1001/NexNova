@@ -8,8 +8,12 @@
   },
   "dependencies": {
     "apollo-server": "^3.x.x",
+    "dotenv": "^10.x.x",
     "graphql": "^15.x.x",
-    "pg": "^8.x.x",
-    "dotenv": "^10.x.x"
+    "pg": "^8.x.x"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.3",
+    "@types/pg": "^8.11.10"
   }
 }
