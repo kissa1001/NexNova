@@ -7,7 +7,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "app": "next dev",
+    "server": "node server/server.js"
   },
   "dependencies": {
     "react": "19.0.0-rc-02c0e824-20241028",
