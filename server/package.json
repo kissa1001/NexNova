@@ -1,0 +1,15 @@
+{
+  "name": "nexnova-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "apollo-server": "^3.x.x",
+    "graphql": "^15.x.x",
+    "pg": "^8.x.x",
+    "dotenv": "^10.x.x"
+  }
+}
