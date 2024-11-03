@@ -1,4 +1,4 @@
-import pkg, { QueryResult as PgQueryResult } from "pg";
+import pkg from "pg";
 const { Pool } = pkg;
 
 import dotenv from "dotenv";
@@ -8,11 +8,7 @@ const pool = new Pool({
   connectionString: process.env.SUPABASE_DB_URL,
 });
 
-interface QueryResult {
-  query: (text: string, params?: unknown[]) => Promise<PgQueryResult>;
-}
-
-const db: QueryResult = {
+const db = {
   query: (text, params) => pool.query(text, params),
 };
 

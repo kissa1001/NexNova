@@ -7,6 +7,14 @@ const typeDefs = gql`
     created_at: String
   }
 
+  type Mood {
+    entry_id: ID!
+    user_id: ID!
+    mood: Int
+    entry_date: String
+    notes: String
+  }
+
   type JobApplication {
     application_id: ID!
     user_id: ID!
@@ -15,14 +23,6 @@ const typeDefs = gql`
     status: String
     notes: String
     date_applied: String
-  }
-
-  type Mood {
-    entry_id: ID!
-    user_id: ID!
-    mood: Int
-    entry_date: String
-    notes: String
   }
 
   type Query {
@@ -41,7 +41,7 @@ const typeDefs = gql`
       user_id: ID!
       mood: Int!
       entry_date: String!
-      notes: String
+      notes: String!
     ): Mood
   }
 `;
